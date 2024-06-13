@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #1A44A0;
+    --primary-alt-color: #DDF0F5;
+    --neutral-color: #F7F7F2;
+    --neutral-alt-color: #f0e2d2;
+    --accent-color: #ffe5e3;
+    --text-color: #2e3638;
+
+}
+
+body {
+    position: relative;
+    padding-top: 56px; /* Height of navbar */
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--neutral-color);
+    color: var(--text-color);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 900;
+}
+
+.display-4 {
+    font-weight: 900;
+}
+
+.lead {
+    font-weight: 400;
+}
+
+.navbar-nav > li{
+    margin-left: 1.875em;
+    margin-right: 1.875em;
+  }
+
+
+.navbar-brand a {
+    font-size: 1em;
+    font-family: "Roboto Mono", monospace;
+
+}
+
+#contact a {
+    font-family: "Roboto Mono", mono;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+.section-title# {
+    font-family: "Rob";
+
+}
+
+i {
+    margin-bottom: 2rem;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-brand {
+    color: var(--primary-color);
+    font-size: 1em;
+    
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-brand:hover {
+    color: var(--accent-color);
+    
+}
+.navbar-light .navbar-toggler {
+    border-color: var(--primary-color);
+}
+.bg-light {
+    background-color: var(--neutral-color) !important;
+}
+.bg-dark {
+    background-color: var(--primary-color) !important;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-primary:hover {
+    color: var(--text-color) !important;
+    background-color: var(--accent-color);
+    border-color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color) !important;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--primary-color);
+    text-underline-offset: 6px;
+}
+
+.badge.rounded-pill.text-bg-light {
+    background-color: var(--accent-color);
+    color: var(--accent-color);
+    border: 1px solid;
+    border-color: var(--text-color);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: var(--accent-color); /* Change this to the desired background color */
+}
+
+/* Change the text color of the dropdown items on hover */
+.dropdown-menu .dropdown-item:hover {
+    color: var(--accent-color); /* Change this to the desired text color */
+    background-color: var(--neutral-color); /* Optional: change the background color on item hover */
+    text-decoration: none;
+}
