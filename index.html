@@ -9,8 +9,7 @@
     <link href="./css/custom.css" rel="stylesheet">
     
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-       
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
     </style>
 </head>
 <body>
@@ -24,29 +23,29 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#summary">Summary</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="experienceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Experience
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="experienceDropdown">
-                        <li><a class="dropdown-item" href="#marketing-manager">Marketing Manager</a></li>
-                        <li><a class="dropdown-item" href="#art-director">Art Director</a></li>
-                        <li><a class="dropdown-item" href="#graphic-designer">Graphic Designer</a></li>
-                        <li><a class="dropdown-item" href="#user-experience-designer">User Experience Designer</a></li>
-                        <li><a class="dropdown-item" href="#project-management">Project Manager</a></li>
+                        <li><a class="dropdown-item" href="#" data-tab="#specialty" data-target="#marketing-manager">Marketing Manager</a></li>
+                        <li><a class="dropdown-item" href="#" data-tab="#specialty" data-target="#art-director">Art Director</a></li>
+                        <li><a class="dropdown-item" href="#" data-tab="#specialty" data-target="#graphic-designer">Graphic Designer</a></li>
+                        <li><a class="dropdown-item" href="#" data-tab="#specialty" data-target="#user-experience-designer">User Experience Designer</a></li>
+                        <li><a class="dropdown-item" href="#" data-tab="#specialty" data-target="#project-management">Project Manager</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" data-tab="#chronological" data-target="#chronological-experience">View Chronologically</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
-                </li>
+                    <a class="nav-link" href="#education">Education</a></li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
+                    <a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -54,248 +53,411 @@
 
 <div class="container-fluid bg-light m-auto py-5">
     <div class="">
-        <section id="header" class="p-5 my-5">
+        <section id="header" class="p-lg-5 my-lg-5">
             <div class="container text-start">
-                <h1 class="display-4">Innovative Designer, Developer, and Digital Marketer with Over 10 Years of Experience
+                <h1 class="display-4">I'm Susie Howard — a seasoned UX Designer and Digital Marketer with over 10 years of experience.
                 </h1>
-                <p class="lead">Expert in crafting seamless user experiences and driving product design through strategic innovation and cross-functional collaboration.</p>
-                <a class="btn btn-primary btn-lg" href="#experience" role="button">Learn More</a>
+                <p class="lead">I specialize in enhancing user experiences through innovative design, strategic marketing, and technology integration. My focus is on creating impactful digital experiences that drive business growth and improve user satisfaction.</p>
+                <a class="btn btn-primary btn-lg" href="#about" role="button">Learn More</a>
             </div>
         </section>
     </div>
 </div>
 
-<div class="container my-5">
+<div class="container my-5 px-4">
     <div class="py-5">
-        <section id="summary">
-            <h2>Professional Summary</h2>
-            <p>Empathic systems thinker and innovator with over a decade of experience in service design, digital product design, and marketing. Expert in harmonizing and streamlining complex services and systems to enhance user experiences. Proven ability to lead cross-functional teams in designing and delivering inclusive, equitable, and impactful digitally enabled end-to-end services. Adept at facilitating the adoption of people-centered design mindsets and approaches within organizations. Skilled in user experience design with a strong background in marketing automation, A/B testing, and agile project management.</p>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Experienced UX Designer and Digital Marketer with over 10 years of expertise in strategy, design, and marketing. Committed to enhancing user experiences through automation, technology, and strategic communications. Proven track record of delivering creative solutions and adopting technology to drive impactful digital experiences and business growth.</p>
         </section>
     </div>
 
+
     <section id="experience" class="my-5 section-title">
         <h2>Experience</h2>
+        <ul class="nav nav-tabs mt-4" id="experienceTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="specialty-tab" data-bs-toggle="tab" data-bs-target="#specialty" type="button" role="tab" aria-controls="specialty" aria-selected="true">View by Specialty</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="chronological-tab" data-bs-toggle="tab" data-bs-target="#chronological" type="button" role="tab" aria-controls="chronological" aria-selected="false">View Chronologically</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="experienceTabContent">
+            <div class="tab-pane fade show active" id="specialty" role="tabpanel" aria-labelledby="specialty-tab">
+                <div id="marketing-manager" class="my-lg-5 py-lg-5 mt-4">
+                    <h3 class="badge rounded-pill text-bg-light">Marketing Manager</h3>
+                    <div class="my-5">
+                        <h4>Nurture Marketing Manager, University of Arizona Global Campus</h4>
+                        <p><strong>October 2023 — Present</strong></p>
+                        <ul>
+                            <li>Spearhead Nurture Marketing strategies and campaigns including copywriting, design, development, and data analysis</li>
+                            <li>Design and develop admission portal applications in Salesforce’s Experience Builder</li>
+                            <li>Conduct market research and analyze funnel metrics to enhance conversion rates</li>
+                            <li>Collaborate with stakeholders to optimize digital touchpoints using VOC insights</li>
+                            <li>Build and oversee campaigns within Salesforce and Salesforce Marketing Cloud (SFMC)</li>
+                            <li>Ensure cross-device compatibility and WCAG compliance</li>
+                            <li>Prototype, test, and iterate digital strategies for streamlined user interactions</li>
+                        </ul>
+                        <h5 class="mt-4 mt-lg-5 mb-lg-4">Recent Projects</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column px-md-5 py-5">
+                                        <h5 class="card-title">Financial Aid Resources</h5>
+                                        <p class="card-text">An informative landing page designed to reduce administrative withdrawals due to missing FAFSA's.</p>
+                                        <a href="https://cloud.mail.uagc.edu/financial-aid-resources" class="mt-auto btn btn-primary" target="_blank">View Page</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body d-flex flex-column px-md-5 py-5">
+                                        <h5 class="card-title">Winter Break</h5>
+                                        <p class="card-text">A specialized landing page developed to better inform students of important dates, links, and FAQs surrounding Winter Break.</p>
+                                        <a href="https://cloud.mail.uagc.edu/winter-break" class="mt-auto btn btn-primary" target="_blank">View Page</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div id="marketing-manager" class="my-5 py-5">
-            <h3 class="badge rounded-pill text-bg-light">Marketing Manager</h3>
-            <div class="my-5">
-                <h4>Nurture Marketing Manager</h4>
-                <h5>University of Arizona Global Campus</h5>
-                <p><strong>Remote | October 2023 — Present</strong></p>
-                <ul>
-                    <li>Spearhead nurture marketing strategies, ensuring alignment with institutional values and goals.</li>
-                    <li>Drive consistency and fluidity in student experiences across digital platforms, including student portals and other student-facing touchpoints.</li>
-                    <li>Conduct market research, analyzing funnel metrics to continually innovate and enhance conversion rates and overall effectiveness.</li>
-                    <li>Collaborate with stakeholders to refine and optimize digital touchpoints, leveraging Voice of Customer (VOC) insights and user feedback.</li>
-                    <li>Design and oversee campaigns within Salesforce, Salesforce Marketing Cloud, and Salesforce Experience Cloud.</li>
-                    <li>Develop new admission portal application and user experiences in Salesforce's Experience Builder using the Salesforce Lightning Design System (SLDS) framework.</li>
-                    <li>Ensure cross-device compatibility and WCAG compliance using tools like Litmus, BrowserStack, and SiteImprove.</li>
-                    <li>Prototype, test, and iterate on digital strategies to create streamlined, intuitive digital interactions.</li>
-                </ul>
-            </div>
-        </div>
+                <div id="art-director" class="my-lg-5 py-lg-5">
+                    <h3 class="badge rounded-pill text-bg-light">Art Director</h3>
+                    <div class="my-5" id="snhu-ad">
+                        <h4>Art Director, Southern New Hampshire University</h4>
+                        <p><strong>January 2023 — October 2023</strong></p>
+                        <a href="#snhu-sd"><p>Promoted from Senior Graphic Designer, May 2021 — January 2023</p></a>
+                        <ul>
+                            <li>Led design, development and creative strategy for Nurture Marketing communications</li>
+                            <li>Conducted A/B testing and iterative design to enhance student experiences</li>
+                            <li>Managed campaigns within Salesforce Marketing Cloud (SFMC)</li>
+                            <li>Analyzed metrics with Hotjar and Google Analytics to improve conversion rates</li>
+                            <li>Ensured cross-device compatibility and WCAG compliance</li>
+                            <li>Leveraged VOC insights to boost student retention and satisfaction</li>
+                        </ul>
+                    </div>
+                    <div class="my-5" id="bobs-ad">
+                        <h4>Art Director, Bob’s Discount Furniture</h4>
+                        <p><strong>October 2018 — June 2020</strong></p>
+                        <a href="#bobs-sd"><p>See previous role of Senior Graphic Designer, July 2017 — March 2018</p></a>
+                        <ul>
+                            <li>Directed art and design for email and social campaigns, digital advertising, brand identity, in-store signage, and lookbooks</li>
+                            <li>Designed and styled sets for photo shoots and commercials</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <div id="art-director" class="my-5 py-5">
-            <h3 class="badge rounded-pill text-bg-light">Art Director</h3>
-            <div class="my-5">
-                <h4>Art Director, Southern New Hampshire University</h4>
-                <p><strong>Remote | January 2023 — October 2023</strong></p>
-                <ul>
-                    <li>Led design, development, and creative strategy for Nurture Marketing communications and initiatives.</li>
-                    <li>Utilized marketing, technology, automation, and user experience design to craft streamlined digital interactions.</li>
-                    <li>Prototyped, A/B tested, and iterated on digital strategies to ensure consistent student experiences.</li>
-                    <li>Collaborated with stakeholders to refine and optimize digital touchpoints from initial inquiry to enrollment.</li>
-                    <li>Analyzed funnel metrics using SFMC, Hotjar, and Google Analytics to enhance conversion rates.</li>
-                    <li>Ensured cross-device compatibility and WCAG compliance using Chrome dev tools, Litmus, BrowserStack, SiteImprove, and WAVE.</li>
-                    <li>Leveraged VOC insights and Hotjar user feedback to elevate student retention rates and satisfaction.</li>
-                </ul>
-            </div>
-            <div class="my-5">
-                <h4>Art Director, Bob’s Discount Furniture</h4>
-                <p><strong>Remote | October 2018 — June 2020</strong></p>
-                <ul>
-                    <li>Directed art and design for email and social campaigns, digital advertising, brand identity, in-store signage, and lookbooks.</li>
-                    <li>Designed and styled sets for photo shoots and commercials.</li>
-                </ul>
-            </div>
-        </div>
+                <div id="graphic-designer" class="my-lg-5 py-lg-5">
+                    <h3 class="badge rounded-pill text-bg-light">Graphic Designer</h3>
+                    <div class="my-5" id="snhu-sd">
+                        <h4>Senior Graphic Designer, Southern New Hampshire University</h4>
+                        <p><strong>May 2021 — January 2023</strong></p>
+                        <a href="#snhu-ad"><p>Promoted to Art Director January 2023</p></a>
+                        <ul>
+                            <li>Designed print and digital assets for internal brand, web, and Nurture marketing campaigns</li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <h4>Graphic Designer, Octane Marketing</h4>
+                        <p><strong>December 2020 — May 2021</strong></p>
+                        <ul>
+                            <li>Developed digital and print designs for an automotive marketing agency</li>
+                        </ul>
+                    </div>
+                    <div class="my-5" id="bobs-sd">
+                        <h4>Senior Graphic Designer, Bob’s Discount Furniture</h4>
+                        <p><strong>July 2017 — March 2018</strong></p>
+                        <a href="#bobs-ad"><p>Promoted to Art Director October 2018</p></a>
+                        <ul>
+                            <li>Directed art and design for email and social campaigns, digital advertising, brand identity, in-store signage, and lookbooks</li>
+                            <li>Designed and styled sets for photo shoots and commercials</li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <h4>Freelance Graphic Designer, The Yankee Candle Co.</h4>
+                        <p><strong>November 2016 — July 2017</strong></p>
+                        <ul>
+                            <li>Created print designs for consumer direct and retail divisions</li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <h4>Graphic Designer, American International College</h4>
+                        <p><strong>January 2016 — November 2016</strong></p>
+                        <ul>
+                            <li>Designed print and digital materials for campus and alumni marketing</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <div id="graphic-designer" class="my-5 py-5">
-            <h3 class="badge rounded-pill text-bg-light">Graphic Designer</h3>
-            <div class="my-5">
-                <h4>Senior Graphic Designer, Southern New Hampshire University</h4>
-                <p><strong>Remote | May 2021 — January 2023</strong></p>
-                <ul>
-                    <li>Created print and digital designs for internal brand, web, and Nurture marketing campaigns.</li>
-                </ul>
-            </div>
-            <div class="my-5">
-                <h4>Graphic Designer, Octane Marketing</h4>
-                <p><strong>Remote | December 2020 — May 2021</strong></p>
-                <ul>
-                    <li>Developed digital and print designs for an automotive marketing agency.</li>
-                </ul>
-            </div>
-            <div class="my-5">
-                <h4>Freelance Graphic Designer, The Yankee Candle Co.</h4>
-                <p><strong>Remote | November 2016 — July 2017</strong></p>
-                <ul>
-                    <li>Created print designs for consumer direct and retail divisions.</li>
-                </ul>
-            </div>
-            <div class="my-5">
-                <h4>Graphic Designer, American International College</h4>
-                <p><strong>Remote | January 2016 — November 2016</strong></p>
-                <ul>
-                    <li>Designed print and digital materials for campus and alumni marketing.</li>
-                </ul>
-            </div>
-        </div>
+                <div id="user-experience-designer" class="my-lg-5 py-lg-5">
+                    <h3 class="badge rounded-pill text-bg-light">User Experience Designer</h3>
+                    <div class="my-5">
+                        <h4>User Experience Designer, Last Call Media</h4>
+                        <p><strong>March 2018 — October 2018</strong></p>
+                        <ul>
+                            <li>Designed user experiences for a full-service digital agency</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <div id="user-experience-designer" class="my-5 py-5">
-            <h3 class="badge rounded-pill text-bg-light">User Experience Designer</h3>
-            <div class="my-5">
-                <h4>User Experience Designer, Last Call Media</h4>
-                <p><strong>Remote | March 2018 — October 2018</strong></p>
-                <ul>
-                    <li>Designed user experiences for a full-service digital agency.</li>
-                </ul>
+                <div id="project-management" class="my-lg-5 py-lg-5">
+                    <h3 class="badge rounded-pill text-bg-light">Project Manager</h3>
+                    <div class="my-5">
+                        <h4>Project Manager/UX Designer, Common Media</h4>
+                        <p><strong>June 2015 — January 2016</strong></p>
+                        <ul>
+                            <li>Managed projects and designed websites for a digital agency</li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <h4>Project Manager, BRIGADE</h4>
+                        <p><strong>August 2013 — June 2015</strong></p>
+                        <ul>
+                            <li>Managed projects for an advertising agency</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div id="project-management" class="my-5 py-5">
-            <h3 class="badge rounded-pill text-bg-light">Project Manager</h3>
-            <div class="my-5">
-                <h4>Project Manager/UX Designer, Common Media</h4>
-                <p><strong>Remote | June 2015 — January 2016</strong></p>
-                <ul>
-                    <li>Managed projects and designed websites for a digital agency.</li>
-                </ul>
-            </div>
-            <div class="my-5">
-                <h4>Project Manager, BRIGADE</h4>
-                <p><strong>Remote | August 2013 — June 2015</strong></p>
-                <ul>
-                    <li>Managed projects for an advertising agency.</li>
-                </ul>
+            <div class="tab-pane fade" id="chronological" role="tabpanel" aria-labelledby="chronological-tab">
+                <div id="chronological-experience" class="my-lg-5 py-lg-5 mt-4">
+                    <h3 class="badge rounded-pill text-bg-light">Sorted by Newest to Oldest</h3>
+                    <div class="my-5">
+                        <h4>Nurture Marketing Manager, University of Arizona Global Campus</h4>
+                        <p><strong>October 2023 — Present</strong></p>
+                        <ul>
+                            <li>Spearhead Nurture Marketing strategies and campaigns including copywriting, design, development, and data analysis</li>
+                            <li>Design and develop admission portal applications in Salesforce’s Experience Builder</li>
+                            <li>Conduct market research and analyze funnel metrics to enhance conversion rates</li>
+                            <li>Collaborate with stakeholders to optimize digital touchpoints using VOC insights</li>
+                            <li>Build and oversee campaigns within Salesforce and Salesforce Marketing Cloud (SFMC)</li>
+                            <li>Ensure cross-device compatibility and WCAG compliance</li>
+                            <li>Prototype, test, and iterate digital strategies for streamlined user interactions</li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <h4>Art Director, Southern New Hampshire University</h4>
+                        <p><strong>January 2023 — October 2023</strong></p>
+                        <ul>
+                            <li>Led design, development and creative strategy for Nurture Marketing communications</li>
+                            <li>Conducted A/B testing and iterative design to enhance student experiences</li>
+                            <li>Managed campaigns within Salesforce Marketing Cloud (SFMC)</li>
+                            <li>Analyzed metrics with Hotjar and Google Analytics to improve conversion rates</li>
+                            <li>Ensured cross-device compatibility and WCAG compliance</li>
+                            <li>Leveraged VOC insights to boost student retention and satisfaction</li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <h4>Graphic Designer, Octane Marketing</h4>
+                        <p><strong>December 2020 — May 2021</strong></p>
+                        <ul>
+                            <li>Developed digital and print designs for an automotive marketing agency</li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <h4>Senior Graphic Designer, Southern New Hampshire University</h4>
+                        <p><strong>May 2021 — January 2023</strong></p>
+                        <ul>
+                            <li>Designed print and digital assets for internal brand, web, and Nurture marketing campaigns</li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <h4>Art Director, Bob’s Discount Furniture</h4>
+                        <p><strong>October 2018 — June 2020</strong></p>
+                        <ul>
+                            <li>Directed art and design for email and social campaigns, digital advertising, brand identity, in-store signage, and lookbooks</li>
+                            <li>Designed and styled sets for photo shoots and commercials</li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <h4>Senior Graphic Designer, Bob’s Discount Furniture</h4>
+                        <p><strong>July 2017 — March 2018</strong></p>
+                        <ul>
+                            <li>Directed art and design for email and social campaigns, digital advertising, brand identity, in-store signage, and lookbooks</li>
+                            <li>Designed and styled sets for photo shoots and commercials</li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <h4>Freelance Graphic Designer, The Yankee Candle Co.</h4>
+                        <p><strong>November 2016 — July 2017</strong></p>
+                        <ul>
+                            <li>Created print designs for consumer direct and retail divisions</li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <h4>Graphic Designer, American International College</h4>
+                        <p><strong>January 2016 — November 2016</strong></p>
+                        <ul>
+                            <li>Designed print and digital materials for campus and alumni marketing</li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <h4>User Experience Designer, Last Call Media</h4>
+                        <p><strong>March 2018 — October 2018</strong></p>
+                        <ul>
+                            <li>Designed user experiences for a full-service digital agency</li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <h4>Project Manager/UX Designer, Common Media</h4>
+                        <p><strong>June 2015 — January 2016</strong></p>
+                        <ul>
+                            <li>Managed projects and designed websites for a digital agency</li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <h4>Project Manager, BRIGADE</h4>
+                        <p><strong>August 2013 — June 2015</strong></p>
+                        <ul>
+                            <li>Managed projects for an advertising agency</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    </div>
+</div>
 
-    <div class="container-fluid bg-dark py-5 text-light">
-        <div class="container my-5">
-            <section id="skills" class="my-5 section-title">
-                <h2>Skills</h2>
-                
-                <div class="d-flex flex-wrap mb-3">
-                    <button class="btn btn-outline-light me-2 mb-2" data-filter="all">All</button>
-                    <button class="btn btn-outline-light me-2 mb-2" data-filter="design">Design</button>
-                    <button class="btn btn-outline-light me-2 mb-2" data-filter="development">Development</button>
-                    <button class="btn btn-outline-light me-2 mb-2" data-filter="marketing">Marketing</button>
-                    <button class="btn btn-outline-light me-2 mb-2" data-filter="analytics">Analytics</button>
-                </div>
+</div>
 
-                <ul class="list-unstyled">
-                    <li class="skill-item design analytics">A/B Testing</li>
-                    <li class="skill-item design">Adobe Creative Suite</li>
-                    <li class="skill-item design">Agile Project Management</li>
-                    <li class="skill-item analytics">Analytics</li>
-                    <li class="skill-item marketing">B2C Marketing</li>
-                    <li class="skill-item development">Bootstrap</li>
-                    <li class="skill-item design">Collaboration</li>
-                    <li class="skill-item development">CRM</li>
-                    <li class="skill-item marketing">Digital & Email Marketing</li>
-                    <li class="skill-item design">Experimentation</li>
-                    <li class="skill-item design">Figma</li>
-                    <li class="skill-item analytics">Google Analytics</li>
-                    <li class="skill-item design">Growth Mindset</li>
-                    <li class="skill-item development">HTML & CSS</li>
-                    <li class="skill-item analytics">Hotjar</li>
-                    <li class="skill-item design">Innovation</li>
-                    <li class="skill-item design">Iterative Testing</li>
-                    <li class="skill-item development">JavaScript</li>
-                    <li class="skill-item development">knak</li>
-                    <li class="skill-item marketing">Marketing Automation</li>
-                    <li class="skill-item marketing">Personalization</li>
-                    <li class="skill-item design">Prototyping</li>
-                    <li class="skill-item marketing">Salesforce</li>
-                    <li class="skill-item development">Salesforce Developer Console</li>
-                    <li class="skill-item design development">Salesforce Lightning Design System (SLDS)</li>
-                    <li class="skill-item development">Salesforce Lightning Studio</li>
-                    <li class="skill-item marketing">Salesforce Marketing Cloud (SFMC)</li>
-                    <li class="skill-item marketing">Search Engine Optimization (SEO)</li>
-                    <li class="skill-item marketing analytics">SQL</li>
-                    <li class="skill-item design">User Experience Design</li>
-                    <li class="skill-item development">Visual Studio Code</li>
-                    <li class="skill-item design">WCAG Testing & Compliance</li>
-                </ul>
-            </section>
-        </div>
-    </div>
-    
-        <div class="container my-5">
-            <section id="education" class="py-5 section-title">
-                <h2>Education</h2>
-                <p>B.A., Psychology, Minor in Art | Westfield State University, Westfield, MA, 2011</p>
-            </section>
-        </div>
-    </div>
-        <div class="container-fluid bg-light py-5">
-            <section id="contact" class="my-5 section-title">
-                <!-- <h2>Contact</h2> -->
-                 <div class="row text-center">
-                     <div class="col-md-3">
-                         <i class="bi bi-envelope" style="font-size: 2rem;"></i>
-                         <p><a href="mailto:susie@waltonread.com">susie@waltonread.com</a></p>
-                     </div>
-                     <div class="col-md-3">
-                         <i class="bi bi-telephone" style="font-size: 2rem;"></i>
-                         <p><a href="tel:+14139490772">413.949.0772</a></p>
-                     </div>
-                     <div class="col-md-3">
-                         <i class="bi bi-linkedin" style="font-size: 2rem;"></i>
-                         <p><a href="https://www.linkedin.com/in/waltonread/" target="_blank">LinkedIn</a></p>
-                     </div>
-                     <div class="col-md-3">
-                         <i class="bi bi-globe" style="font-size: 2rem;"></i>
-                         <p><a href="https://waltonread.com/" target="_blank">Portfolio</a></p>
-                     </div>
-                 </div>
-             </section>
-        </div>
-       
-    </div>
-    
-    <button class="btn btn-primary back-to-top" onclick="scrollToTop()">Back to Top</button>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        window.addEventListener('scroll', function() {
-            var button = document.querySelector('.back-to-top');
-            if (window.scrollY > 300) {
-                button.style.display = 'block';
-            } else {
-                button.style.display = 'none';
-            }
-        });
+<div class="container-fluid bg-dark py-5 text-light">
+    <div class="container my-5">
+        <section id="skills" class="my-5 section-title">
+            <h2>Skills</h2>
+            
+            <div class="d-flex flex-wrap mb-3">
+                <button class="btn btn-outline-light me-2 mb-2" data-filter="all">All</button>
+                <button class="btn btn-outline-light me-2 mb-2" data-filter="design">Design</button>
+                <button class="btn btn-outline-light me-2 mb-2" data-filter="development">Development</button>
+                <button class="btn btn-outline-light me-2 mb-2" data-filter="marketing">Marketing</button>
+                <button class="btn btn-outline-light me-2 mb-2" data-filter="analytics">Analytics</button>
+            </div>
 
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            <ul class="list-unstyled">
+                <li class="skill-item design analytics">A/B Testing</li>
+                <li class="skill-item design">Adobe Creative Suite</li>
+                <li class="skill-item design">Agile Project Management</li>
+                <li class="skill-item analytics">Analytics</li>
+                <li class="skill-item marketing">B2C Marketing</li>
+                <li class="skill-item development">Bootstrap</li>
+                <li class="skill-item design">Collaboration</li>
+                <li class="skill-item development">CRM</li>
+                <li class="skill-item development">Cross Browser Compatibility</li>
+                <li class="skill-item development">Debugging</li>
+                <li class="skill-item marketing">Digital & Email Marketing</li>
+                <li class="skill-item design">Experimentation</li>
+                <li class="skill-item design">Figma</li>
+                <li class="skill-item analytics">Google Analytics</li>
+                <li class="skill-item design">Growth Mindset</li>
+                <li class="skill-item development">HTML & CSS</li>
+                <li class="skill-item analytics">Hotjar</li>
+                <li class="skill-item design">Innovation</li>
+                <li class="skill-item design">Iterative Testing</li>
+                <li class="skill-item development">JavaScript</li>
+                <li class="skill-item development">knak</li>
+                <li class="skill-item marketing">Marketing Automation</li>
+                <li class="skill-item marketing">Personalization</li>
+                <li class="skill-item design">Prototyping</li>
+                <li class="skill-item development">Responsive Design</li>
+                <li class="skill-item marketing">Salesforce</li>
+                <li class="skill-item development">Salesforce Developer Console</li>
+                <li class="skill-item design development">Salesforce Lightning Design System (SLDS)</li>
+                <li class="skill-item development">Salesforce Lightning Studio</li>
+                <li class="skill-item marketing">Salesforce Marketing Cloud (SFMC)</li>
+                <li class="skill-item marketing">Search Engine Optimization (SEO)</li>
+                <li class="skill-item marketing analytics">SQL</li>
+                <li class="skill-item design">User Experience Design</li>
+                <li class="skill-item development">Visual Studio Code</li>
+                <li class="skill-item design">WCAG Testing & Compliance</li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+<div class="container my-5">
+    <section id="education" class="py-5 section-title">
+        <h2>Education</h2>
+        <div class="my-5">
+            <h3 class="h4">Westfield State University</h3>
+            <p><strong>August 2011</strong></p>
+            <p>Bachelor of Arts, Psychology<br>Minor, Art</p>
+        </div>
+    </section>
+</div>
+
+<div class="container-fluid bg-light py-5">
+    <section id="contact" class="my-5 section-title">
+        <div class="row text-center">
+            <div class="col-md-3">
+                <i class="bi bi-envelope" style="font-size: 2rem;"></i>
+                <p><a href="mailto:susie@waltonread.com">susie@waltonread.com</a></p>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-telephone" style="font-size: 2rem;"></i>
+                <p><a href="tel:+14139490772">413.949.0772</a></p>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-linkedin" style="font-size: 2rem;"></i>
+                <p><a href="https://www.linkedin.com/in/waltonread/" target="_blank">LinkedIn</a></p>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-globe" style="font-size: 2rem;"></i>
+                <p><a href="https://waltonread.com/" target="_blank">Design Work</a></p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<button class="btn btn-primary back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    window.addEventListener('scroll', function() {
+        var button = document.querySelector('.back-to-top');
+        if (window.scrollY > 300) {
+            button.style.display = 'block';
+        } else {
+            button.style.display = 'none';
         }
+    });
 
-        document.querySelectorAll('[data-filter]').forEach(button => {
-            button.addEventListener('click', () => {
-                const filter = button.getAttribute('data-filter');
-                document.querySelectorAll('.skill-item').forEach(item => {
-                    if (filter === 'all' || item.classList.contains(filter)) {
-                        item.style.display = 'list-item';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.querySelectorAll('[data-filter]').forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.getAttribute('data-filter');
+            document.querySelectorAll('.skill-item').forEach(item => {
+                if (filter === 'all' || item.classList.contains(filter)) {
+                    item.style.display = 'list-item';
+                } else {
+                    item.style.display = 'none';
+                }
             });
         });
-    </script>
+    });
+
+    document.querySelectorAll('.dropdown-item').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetTab = link.getAttribute('data-tab');
+            const targetSection = link.getAttribute('data-target');
+            
+            if (targetTab && targetSection) {
+                // Activate the correct tab
+                const tabTrigger = new bootstrap.Tab(document.querySelector(`button[data-bs-target="${targetTab}"]`));
+                tabTrigger.show();
+
+                // Wait for the tab to be shown before scrolling to the target section
+                setTimeout(() => {
+                    document.querySelector(targetSection).scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+        });
+    });
+</script>
 </body>
 </html>

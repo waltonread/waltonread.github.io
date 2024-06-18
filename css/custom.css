@@ -38,6 +38,11 @@ h1, h2, h3, h4 {
     font-weight: 900;
 }
 
+.h4 {
+    font-weight: 900;
+}
+
+
 .display-4 {
     font-weight: 900;
 }
@@ -58,7 +63,7 @@ h1, h2, h3, h4 {
 
 }
 
-#contact a {
+a {
     font-family: "Roboto Mono", mono;
     font-weight: 600;
     text-decoration: none;
@@ -67,7 +72,6 @@ h1, h2, h3, h4 {
 
 
 .section-title# {
-    font-family: "Rob";
 
 }
 
@@ -130,4 +134,17 @@ a:hover {
     color: var(--accent-color); /* Change this to the desired text color */
     background-color: var(--neutral-color); /* Optional: change the background color on item hover */
     text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-tabs .nav-item {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+    .nav-tabs .nav-link {
+        width: 100%;
+        border: 1px solid #dee2e6;
+    }
 }
